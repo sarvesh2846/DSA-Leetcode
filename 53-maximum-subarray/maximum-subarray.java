@@ -5,6 +5,7 @@ class Solution {
         int maxNegative =  Integer.MIN_VALUE;
         boolean allNegative = true;
 
+        // check that el are -ve or not ,if yes then calculate smaller -ve number
         for(int val : nums){
             if(val >= 0){
                 allNegative = false;
@@ -17,6 +18,7 @@ class Solution {
             }
         }
 
+        // If all elements are -ve
         if (allNegative) {
             return maxNegative;
         }

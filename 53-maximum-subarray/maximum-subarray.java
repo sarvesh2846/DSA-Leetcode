@@ -23,6 +23,7 @@ class Solution {
             return maxNegative;
         }
 
+        //Otherwise use Kadane's algo
         for(int val : nums){
             cs += val;
             if(cs < 0){

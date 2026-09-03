@@ -13,6 +13,7 @@ class Solution {
 
         long binForm = n;
 
+        //If n is negative no
         if(binForm < 0){
             x = 1/x;
             binForm = -binForm;

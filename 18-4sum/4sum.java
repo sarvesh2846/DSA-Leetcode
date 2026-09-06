@@ -13,7 +13,7 @@ class Solution {
             for(int j = i+1; j < n;){
                 int p = j+1, q = n-1;
 
-                while(p < q){
+                while(p < q){ // type cast (long)
                     long sum = (long) nums[i] + (long)nums[j] + (long)nums[p] + (long)nums[q];
 
                     if(sum < target){

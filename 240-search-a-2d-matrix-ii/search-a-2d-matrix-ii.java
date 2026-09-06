@@ -1,7 +1,8 @@
 class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
         int m = matrix.length, n = matrix[0].length;
-
+        
+        // start from top right element... 
         int r = 0, c = n-1;
 
         while(c >= 0 && r < m){

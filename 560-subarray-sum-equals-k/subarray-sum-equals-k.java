@@ -6,6 +6,7 @@ class Solution {
         int count = 0;
         int prefixSum[] = new int[n];
 
+        //Add the 0th idx num to 0th idx Prefix Array
         prefixSum[0] = nums[0];
 
         // Prefix Sum Array
@@ -16,19 +17,23 @@ class Solution {
         HashMap<Integer, Integer> m = new HashMap<>();
 
         for(int j = 0; j < n; j++){
+            // Found Subarray which starts from index 0
             if(prefixSum[j] == k){
                 count++;
             }
-            int val = prefixSum[j] - k; 
             // left boundry created from right boundry 
-
+            int val = prefixSum[j] - k; 
+            
+            // Check if required previous prefix sum exists
             if(m.containsKey(val)){
                 count += m.get(val);
             }
 
+            // Store New prefix sum with 0 frequency if not exists
             if(!m.containsKey(prefixSum[j])){
                 m.put(prefixSum[j], 0);
             }
+            // update frequency of current prefix sum
             m.put(prefixSum[j], m.get(prefixSum[j]) + 1);
         }
     return count;

@@ -10,6 +10,7 @@ class Solution {
             }
         }
 
+        // If elements are in decresing order...
         if(pivot == -1){
 
             int left = 0;

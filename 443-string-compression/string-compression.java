@@ -1,5 +1,5 @@
 class Solution {
-    public int compress(char[] chars) {
+    public int compress(char[] chars) { //O(n) => i is upadating in Both
         int n = chars.length;
         int idx = 0;
 

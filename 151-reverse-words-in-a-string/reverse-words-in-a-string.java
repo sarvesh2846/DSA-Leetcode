@@ -7,7 +7,7 @@ class Solution {
     public String reverseWords(String s) {
         int n = s.length();
 
-        String ans = "";
+        StringBuilder ans = new StringBuilder();
 
         s = new StringBuilder(s).reverse().toString(); //reverse the str
 
@@ -23,7 +23,8 @@ class Solution {
 
             //If word is Not created Never add extra add on space
             if(word.length() > 0){ 
-                ans += " " + word.toString();
+                ans.append(" ");
+                ans.append(word);
             }
 
         }

@@ -1,5 +1,8 @@
 class Solution {
 
+    //Predifined Function: 
+    // Character.isLetterOrDigit(ch) => It checks whether a character is alphabetic or a digit.
+
     public static boolean isAlphaNum(char ch){
         if((ch >= '0' && ch <= '9') || ( Character.toLowerCase(ch) >= 'a' &&  Character.toLowerCase(ch) <= 'z')){
             return true;
@@ -11,10 +14,12 @@ class Solution {
         int st = 0, end = s.length()-1;
 
         while(st < end){
+            //!Character.isLetterOrDigit(s.charAt(st))
             if(!isAlphaNum(s.charAt(st))){
                 st++;
                 continue;
             }
+            ////!Character.isLetterOrDigit(s.charAt(st))
             if(!isAlphaNum(s.charAt(end))){
                 end--;
                 continue;

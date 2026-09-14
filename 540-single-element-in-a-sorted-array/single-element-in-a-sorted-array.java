@@ -14,7 +14,7 @@ class Solution {
             if(mid == 0  && nums[0] != nums[1]) return nums[mid];
             if(mid == n-1 && nums[n-1] != nums[n-2]) return nums[mid];
 
-            // Element finding Condtions 
+            // Element finding Condtion 
             if(nums[mid-1] != nums[mid] && nums[mid] != nums[mid+1]){
                 return nums[mid];
             }

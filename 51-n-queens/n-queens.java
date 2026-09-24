@@ -55,6 +55,8 @@ class Solution {
     }
 
     public List<List<String>> solveNQueens(int n) {
+        // BOARD LIST CREATION
+        //------------------------------------------
         List<String> board = new ArrayList<>();
 
         // Create n rows of "...."
@@ -65,10 +67,16 @@ class Solution {
             board.add(emptyRow);
         }
 
+        //ANS LIST CREATION
+        //---------------------------------------
+         // initiase the ans List
         List<List<String>> ans = new ArrayList<>(); // initiase the ans List
 
-        nQueens(board, 0, n, ans);
 
-        return ans;
+        //----------------------------------
+        // pass the Lists to call
+        nQueens(board, 0, n, ans); // call to fun
+
+        return ans; // only returning the ans List
     }
 }

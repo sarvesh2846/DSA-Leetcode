@@ -13,7 +13,9 @@ class Solution {
                 return false;
             }
         }
+
         //grid
+        // 3*3 matrix start row & col
         int srow = (row/3) * 3;
         int scol = (col/3) * 3;
 

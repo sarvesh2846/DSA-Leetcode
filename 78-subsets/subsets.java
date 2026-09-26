@@ -1,6 +1,5 @@
 import java.util.*;
 
-// O(n * 2^n)
 class Solution { 
 
     public static void getAllSubsets(int[] nums, List<Integer> ans, int i, List<List<Integer>> allSubsets){

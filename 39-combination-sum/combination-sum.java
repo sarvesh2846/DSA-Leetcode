@@ -14,6 +14,8 @@ class Solution {
             if(!set.contains(combin)){
                 ans.add(new ArrayList<>(combin));
                 set.add(new ArrayList<>(combin));
+                // if there is not any target founded then it have return empty List[].
+                // but for that it have initiased first here that will ne bot happens 
             }
             return;    
         }
@@ -33,7 +35,7 @@ class Solution {
     }
 
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        set.clear();
+        set.clear(); // .clear fun intialise list and make clear
         List<List<Integer>> ans = new ArrayList<>();
         List<Integer> combin = new ArrayList<>();
 

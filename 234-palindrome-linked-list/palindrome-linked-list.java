@@ -37,7 +37,7 @@ class Solution {
             prev = curr;
             curr = next;
         }
-        // prev = head
+        // 2nd LL prev = head
 
         ListNode right = prev;
         ListNode left = head;

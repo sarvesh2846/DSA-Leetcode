@@ -18,6 +18,7 @@ class Solution {
 
         while(curr != null){
             if(curr.child != null){
+                
                 //flattern the child nodes
                 Node next = curr.next;
                 curr.next = flatten(curr.child);

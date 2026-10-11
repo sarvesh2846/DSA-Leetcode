@@ -12,7 +12,7 @@ class Solution {
                 st.push(s.charAt(i));
             }
             else{
-                if(st.isEmpty()){ //for close there is not open
+                if(st.size() == 0){ //for close there is not open
                     return false;
                 }
                 //close match
